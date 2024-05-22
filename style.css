@@ -1,0 +1,234 @@
+body {
+  color: #fffcfa;
+}
+
+/* Estilos generales para resetear listas */
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container, .social-container {
+  margin: 0 10px;
+  padding: 0;
+}
+
+/* Estilos para el contenedor del menú */
+.menu-container {
+  width: 100vw;
+  height: 60px; /* Altura recomendada para el menú en móvil */
+  background: linear-gradient(to right, #686263, #474545);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0; /* Padding para darle espacio a los lados */
+}
+
+/* Estilos para la navegación */
+.nav-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los elementos de navegación */
+}
+
+.nav-container li a {
+  text-decoration: none;
+  color: white; /* Color del texto del enlace */
+  padding: 10px 5px; /* Padding para que los enlaces sean más clicables */
+  transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.nav-container li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el contenedor de redes sociales */
+.social-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los iconos sociales */
+}
+
+.social-img {
+  width: 25px; /* Tamaño menor para dispositivos móviles */
+  height: 25px;
+  transition: transform 0.3s; /* Transición suave para el hover */
+}
+
+.social-img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de los iconos al pasar el ratón */
+}
+
+
+/* -------------------------------main-------------------------------- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+.logo-container {
+  width: 100%;
+  height: 200px;
+  /* URL de la imagen que deseas establecer como fondo */
+  background-image: url('./assets/imagen_1.jpg');
+
+  /* Ajustes opcionales */
+  background-size: 100% 100%; /* Ancho y altura en porcentajes */
+  background-position: inherit;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo-container img {
+  width: 80%;
+  height: auto;
+}
+
+.conoceme-container {
+  max-width: 100%;
+  background: linear-gradient(to right, #686263, #474545);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conoceme-info, .conoceme-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conoceme-info {
+  flex-direction: column;
+  width: 80%; /* Ancho del contenido */
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+  padding: 0 10px; /* Espacio en los lados del contenido */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+.conoceme-info p {
+  line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.conoceme-img img {
+  width: 90%;
+  height: auto;
+}
+
+.escogernos-container {
+  background-image: url('./assets/imagen_3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.escogernos-texto {
+  width: 80%; /* Ancho del contenido */
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+.servicios-container {
+  background: linear-gradient(to bottom, #686263, #474545);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.servicios-container section {
+  width: 90vw; /* Ancho del contenido */
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+.servicio, .servicio-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.servicio-img img {
+  width: 100%;
+  height: auto;
+}
+
+.servicio-info h4 {
+  font-weight: 100; /* Establece el grosor de la fuente en negrita */
+}
+
+.procedimientos-container {
+  background: linear-gradient(to bottom, #686263, #474545);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.procedimientos-container section {
+  width: 90vw; /* Ancho del contenido */
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+.videos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+  .menu-container {
+    height: 70px; /* Mayor altura para pantallas más grandes */
+    padding: 0 30px; /* Más padding en los lados */
+  }
+
+  .nav-container {
+    gap: 20px; /* Más espacio entre los elementos de navegación */
+  }
+
+  .nav-container li a {
+    padding: 10px 15px; /* Más padding para los enlaces */
+  }
+
+  .social-img {
+    width: 30px; /* Tamaño mayor para iconos en pantallas grandes */
+    height: 30px;
+  }
+}
