@@ -214,7 +214,32 @@ main {
   height: auto;
 }
 
-.contact-container {
+.contacto-container {
+  width: 100vw;
+  background: linear-gradient(to right, #686263, #474545);
+  box-sizing: border-box;
+}
+
+.contacto-container h2 {
+  text-align: center;
+}
+
+.contacto-info, .social-container, .horarios-container, .map-container {
+  padding: 0 20px;
+}
+
+.contacto-info h4, .horarios-container h4 {
+  font-size: 20px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* .contact-container {
   width: 100vw;
   background-image: url('./assets/imagen_4.png');
   background-size: cover;
@@ -260,7 +285,7 @@ main {
 .contact-method a:hover {
   background-color: rgb(77, 64, 64, 0.2);
   color: #fff;
-}
+} */
 
 .terminos-condiciones-container {
   background: linear-gradient(to right, #686263, #474545);
