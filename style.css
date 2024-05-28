@@ -12,6 +12,7 @@ li {
 .nav-container, .social-container {
   margin: 0 10px;
   padding: 0;
+  overflow: hidden;
 }
 
 /* Estilos para el contenedor del menú */
@@ -117,10 +118,11 @@ main {
   box-sizing: border-box; /* Incluir el padding en el ancho total */
 }
 
-.conoceme-info p {
+.conoceme-info p, .escogernos-texto p, .terminos p, .condiciones p {
   line-height: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8em;
 }
 
 .conoceme-img img {
@@ -148,16 +150,21 @@ main {
 .servicios-container {
   background: linear-gradient(to bottom, #686263, #474545);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
+  padding-bottom: 20px;
 }
 
-.servicios-container section {
+.servicios-info {
   width: 90vw; /* Ancho del contenido */
   margin: 0 auto; /* Centrar el contenido horizontalmente */
   box-sizing: border-box; /* Incluir el padding en el ancho total */
+  display: flex;
+  flex-direction: column;
+  gap: 30px
 }
 
 .servicio, .servicio-img {
@@ -168,11 +175,20 @@ main {
   flex-direction: column;
   gap: 10px;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.servicio {
+  border: 1px solid white;
 }
 
 .servicio-img img {
   width: 100%;
   height: auto;
+}
+
+.servicio-info {
+  padding-left: 10px;
 }
 
 .servicio-info h4 {
@@ -216,8 +232,12 @@ main {
 
 .contacto-container {
   width: 100vw;
-  background: linear-gradient(to right, #686263, #474545);
+  background-image: url('./assets/imagen_4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-sizing: border-box;
+
 }
 
 .contacto-container h2 {
@@ -237,55 +257,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-
-/* .contact-container {
-  width: 100vw;
-  background-image: url('./assets/imagen_4.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.contact-container h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
-.contact-method {
-  margin: 10px 0;
-}
-
-.contact-method p {
-  display: inline-block;
-  margin: 0;
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-.contact-method a {
-  color: #fafafa;
-  text-decoration: none;
-  font-size: 18px;
-  border: 1px solid #fafafa;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.contact-method a:hover {
-  background-color: rgb(77, 64, 64, 0.2);
-  color: #fff;
-} */
 
 .terminos-condiciones-container {
   background: linear-gradient(to right, #686263, #474545);
@@ -307,15 +278,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   text-align: left;
 }
 
-.terminos p, .condiciones p {
+/* .terminos p, .condiciones p {
   font-weight: 1;
-  font-size: 0.92em;
+  font-size: 0.8em;
   margin: 0.8em;
-}
+} */
 
 .aclaracion {
   display: flex;
@@ -327,22 +297,101 @@ main {
 }
 
 /* Media query para pantallas más grandes */
+@media (min-width: 400px) {
+  .logo-container {
+    height: 22%; /* Tamaño mayor para pantallas más grandes */
+    max-height: 500px;
+  }
+  .logo-container img {
+    width: 80%;
+    height: 100%;
+    max-height: 100%;
+  }
+}
 @media (min-width: 768px) {
-  .menu-container {
-    height: 70px; /* Mayor altura para pantallas más grandes */
-    padding: 0 30px; /* Más padding en los lados */
+  .logo-container img {
+    max-width: 60%;
+    max-height: 60%;
   }
-
-  .nav-container {
-    gap: 20px; /* Más espacio entre los elementos de navegación */
+  .conoceme-container {
+    flex-direction: row-reverse;
+    gap: 0;
   }
-
-  .nav-container li a {
-    padding: 10px 15px; /* Más padding para los enlaces */
+  .conoceme-info p, .escogernos-texto p, .terminos p, .condiciones p{
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.9em;
   }
+  h2, h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  .servicios-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .servicios-info h3 { 
+    font-size: 1.2em;
+  }
+  .servicios-info h4 {
+    font-size: 0.9em;
+  }
+  .servicio {
+    width: 30vw;
+  }
+  .servicio-img{
+    width: 100%;
+  }
+  .servicio-img img {
+    width: 100%;
+  }
+  .servicio-info {
+    max-width: 90%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .videos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .video-container {
+    width: 27vw;
+  }
+}
 
-  .social-img {
-    width: 30px; /* Tamaño mayor para iconos en pantallas grandes */
-    height: 30px;
+@media (min-width: 120px) {
+  .logo-container{
+    max-height: 700px;
+  }
+  .logo-container img {
+    max-width: 900px
+  }
+  .conoceme-container {
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+  .conoceme-info p, .escogernos-texto p, .terminos p, .condiciones p{
+        font-size: 1.5em;
+  }
+  h2, h3 {
+    font-size: 3em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  .servicios-info h3 { 
+    font-size: 1.2em;
+  }
+  .servicios-info h4 {
+    font-size: 0.9em;
   }
 }
