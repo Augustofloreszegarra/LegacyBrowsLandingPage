@@ -368,7 +368,7 @@ main {
   }
 }
 
-@media (min-width: 120px) {
+@media (min-width: 1200px) {
   .logo-container{
     max-height: 700px;
   }
