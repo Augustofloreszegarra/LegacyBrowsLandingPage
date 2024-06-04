@@ -9,7 +9,8 @@ li {
   padding: 0;
 }
 
-.nav-container, .social-container {
+.nav-container,
+.social-container {
   margin: 0 10px;
   padding: 0;
   overflow: hidden;
@@ -18,46 +19,58 @@ li {
 /* Estilos para el contenedor del menú */
 .menu-container {
   width: 100vw;
-  height: 60px; /* Altura recomendada para el menú en móvil */
+  height: 60px;
+  /* Altura recomendada para el menú en móvil */
   background: linear-gradient(to right, #686263, #474545);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0; /* Padding para darle espacio a los lados */
+  padding: 0 0;
+  /* Padding para darle espacio a los lados */
 }
 
 /* Estilos para la navegación */
 .nav-container {
   display: flex;
-  gap: 10px; /* Espacio entre los elementos de navegación */
+  gap: 10px;
+  /* Espacio entre los elementos de navegación */
 }
 
 .nav-container li a {
   text-decoration: none;
-  color: white; /* Color del texto del enlace */
-  padding: 10px 5px; /* Padding para que los enlaces sean más clicables */
-  transition: background-color 0.3s; /* Transición suave para el hover */
+  color: white;
+  /* Color del texto del enlace */
+  padding: 10px 5px;
+  /* Padding para que los enlaces sean más clicables */
+  transition: background-color 0.3s;
+  /* Transición suave para el hover */
 }
 
 .nav-container li a:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente al pasar el ratón */
-  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Fondo semi-transparente al pasar el ratón */
+  border-radius: 5px;
+  /* Bordes redondeados */
 }
 
 /* Estilos para el contenedor de redes sociales */
 .social-container {
   display: flex;
-  gap: 10px; /* Espacio entre los iconos sociales */
+  gap: 10px;
+  /* Espacio entre los iconos sociales */
 }
 
 .social-img {
-  width: 25px; /* Tamaño menor para dispositivos móviles */
+  width: 25px;
+  /* Tamaño menor para dispositivos móviles */
   height: 25px;
-  transition: transform 0.3s; /* Transición suave para el hover */
+  transition: transform 0.3s;
+  /* Transición suave para el hover */
 }
 
 .social-img:hover {
-  transform: scale(1.1); /* Aumenta el tamaño de los iconos al pasar el ratón */
+  transform: scale(1.1);
+  /* Aumenta el tamaño de los iconos al pasar el ratón */
 }
 
 
@@ -81,9 +94,11 @@ main {
   background-image: url('./assets/imagen_1.jpg');
 
   /* Ajustes opcionales */
-  background-size: 100% 100%; /* Ancho y altura en porcentajes */
+  background-size: 100% 100%;
+  /* Ancho y altura en porcentajes */
   background-position: inherit;
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +118,8 @@ main {
   gap: 10px;
 }
 
-.conoceme-info, .conoceme-img {
+.conoceme-info,
+.conoceme-img {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -112,13 +128,20 @@ main {
 
 .conoceme-info {
   flex-direction: column;
-  width: 80%; /* Ancho del contenido */
-  margin: 0 auto; /* Centrar el contenido horizontalmente */
-  padding: 0 10px; /* Espacio en los lados del contenido */
-  box-sizing: border-box; /* Incluir el padding en el ancho total */
+  width: 80%;
+  /* Ancho del contenido */
+  margin: 0 auto;
+  /* Centrar el contenido horizontalmente */
+  padding: 0 10px;
+  /* Espacio en los lados del contenido */
+  box-sizing: border-box;
+  /* Incluir el padding en el ancho total */
 }
 
-.conoceme-info p, .escogernos-texto p, .terminos p, .condiciones p {
+.conoceme-info p,
+.escogernos-texto p,
+.terminos p,
+.condiciones p {
   line-height: 1.5em;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -142,9 +165,12 @@ main {
 }
 
 .escogernos-texto {
-  width: 80%; /* Ancho del contenido */
-  margin: 0 auto; /* Centrar el contenido horizontalmente */
-  box-sizing: border-box; /* Incluir el padding en el ancho total */
+  width: 80%;
+  /* Ancho del contenido */
+  margin: 0 auto;
+  /* Centrar el contenido horizontalmente */
+  box-sizing: border-box;
+  /* Incluir el padding en el ancho total */
 }
 
 .servicios-container {
@@ -159,15 +185,19 @@ main {
 }
 
 .servicios-info {
-  width: 90vw; /* Ancho del contenido */
-  margin: 0 auto; /* Centrar el contenido horizontalmente */
-  box-sizing: border-box; /* Incluir el padding en el ancho total */
+  width: 90vw;
+  /* Ancho del contenido */
+  margin: 0 auto;
+  /* Centrar el contenido horizontalmente */
+  box-sizing: border-box;
+  /* Incluir el padding en el ancho total */
   display: flex;
   flex-direction: column;
   gap: 30px
 }
 
-.servicio, .servicio-img {
+.servicio,
+.servicio-img {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -192,7 +222,8 @@ main {
 }
 
 .servicio-info h4 {
-  font-weight: 100; /* Establece el grosor de la fuente en negrita */
+  font-weight: 100;
+  /* Establece el grosor de la fuente en negrita */
 }
 
 .procedimientos-container {
@@ -206,9 +237,12 @@ main {
 }
 
 .procedimientos-container section {
-  width: 90vw; /* Ancho del contenido */
-  margin: 0 auto; /* Centrar el contenido horizontalmente */
-  box-sizing: border-box; /* Incluir el padding en el ancho total */
+  width: 90vw;
+  /* Ancho del contenido */
+  margin: 0 auto;
+  /* Centrar el contenido horizontalmente */
+  box-sizing: border-box;
+  /* Incluir el padding en el ancho total */
 }
 
 .videos-container {
@@ -244,11 +278,15 @@ main {
   text-align: center;
 }
 
-.contacto-info, .social-container, .horarios-container, .map-container {
+.contacto-info,
+.social-container,
+.horarios-container,
+.map-container {
   padding: 0 20px;
 }
 
-.contacto-info h4, .horarios-container h4 {
+.contacto-info h4,
+.horarios-container h4 {
   font-size: 20px;
 }
 
@@ -299,44 +337,58 @@ main {
 /* Media query para pantallas más grandes */
 @media (min-width: 400px) {
   .logo-container {
-    height: 22%; /* Tamaño mayor para pantallas más grandes */
+    height: 22%;
+    /* Tamaño mayor para pantallas más grandes */
     max-height: 500px;
   }
+
   .logo-container img {
     width: 80%;
     height: 100%;
     max-height: 100%;
   }
 }
+
 @media (min-width: 768px) {
-  .nav-container li a  {
+  .nav-container li a {
     font-size: 1.2em;
     padding: 10px;
   }
+
   .social-img {
     width: 60px;
     height: 2.1em;
   }
+
   .logo-container img {
     max-width: 60%;
     max-height: 60%;
   }
+
   .conoceme-container {
     flex-direction: row-reverse;
     gap: 0;
   }
-  .conoceme-info p, .escogernos-texto p, .terminos p, .condiciones p{
+
+  .conoceme-info p,
+  .escogernos-texto p,
+  .terminos p,
+  .condiciones p {
     line-height: 1.5em;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-size: 0.9em;
   }
-  h2, h3 {
+
+  h2,
+  h3 {
     font-size: 1.6em;
   }
+
   h4 {
     font-size: 1em;
   }
+
   .servicios-info {
     width: 100%;
     display: flex;
@@ -346,99 +398,128 @@ main {
     gap: 20px;
     flex-wrap: wrap;
   }
-  .servicios-info h3 { 
+
+  .servicios-info h3 {
     font-size: 1.2em;
   }
+
   .servicios-info h4 {
     font-size: 0.9em;
   }
+
   .servicio {
     width: 30vw;
   }
-  .servicio-img{
+
+  .servicio-img {
     width: 100%;
   }
+
   .servicio-img img {
     width: 100%;
   }
+
   .servicio-info {
     max-width: 90%;
     box-sizing: border-box;
     overflow: hidden;
   }
+
   .videos-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .video-container {
     width: 27vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .nav-container li a  {
+  .nav-container li a {
     font-size: 1.2em;
     padding: 10px;
   }
+
   .social-img {
     width: 60px;
     height: 2.1em;
   }
+
   .logo-container img {
     max-width: 800px;
   }
+
   .conoceme-img img {
     height: auto;
     max-height: 600px;
     max-width: 600px;
     padding: 1.3em 0;
   }
+
   .conoceme-container {
     flex-direction: row-reverse;
     gap: 0;
   }
-  .conoceme-info p, .escogernos-texto p, .terminos p, .condiciones p{
-        font-size: 1.5em;
+
+  .conoceme-info p,
+  .escogernos-texto p,
+  .terminos p,
+  .condiciones p {
+    font-size: 1.5em;
   }
-  h2, h3 {
+
+  h2,
+  h3 {
     font-size: 3em;
   }
+
   h4 {
     font-size: 1.5em;
   }
-  .servicios-info h3 { 
+
+  .servicios-info h3 {
     font-size: 2em;
   }
+
   .servicios-info h4 {
     font-size: 1.8em;
   }
+
   .procedimientos-container section p {
     font-size: 1.8em;
   }
+
   .videos-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8vw;
   }
+
   .video-container {
     width: 20vw;
   }
+
   .video-container video {
     width: 100%;
   }
+
   .contacto-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Agrega dos columnas al contenedor */
-    grid-template-rows: auto auto auto  auto; /* Agrega dos filas al contenedor */
+    grid-template-columns: 1fr 1fr;
+    /* Agrega dos columnas al contenedor */
+    grid-template-rows: auto auto auto auto;
+    /* Agrega dos filas al contenedor */
     gap: 20px;
   }
-  
+
   .contacto {
     grid-column: 1/3;
-    
+
   }
+
   .contacto-info {
     grid-column: 1/2;
     display: flex;
@@ -446,12 +527,15 @@ main {
     justify-content: center;
     align-items: center;
   }
+
   .contacto-info h4 {
     font-size: 2.2em;
   }
+
   .contacto-info p {
     font-size: 1.8em;
-  }  
+  }
+
   .horarios-container {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -460,51 +544,63 @@ main {
     justify-content: center;
     align-items: center;
   }
+
   .horarios-container h4 {
     font-size: 2.2em;
   }
+
   .horarios-container p {
     font-size: 1.8em;
   }
+
   .social-container {
     grid-column: 1/3;
     padding: 20px;
   }
+
   .social img {
     height: auto;
   }
+
   .map-container {
     grid-column: 1/3;
   }
+
   .terminos-condiciones {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: 1fr;
     gap: 20px;
   }
+
   .terminos {
     grid-row: 1/3;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     gap: 0;
   }
+
   .terminos h3 {
     display: flex;
     justify-content: center;
   }
+
   .terminos p {
     display: flex;
     justify-content: center;
   }
+
   .condiciones {
     grid-row: 1/2;
   }
+
   .condiciones h3 {
     display: flex;
     justify-content: center;
   }
-  .aclaracion p  {
+
+  .aclaracion p {
     font-size: 1.5em;
   }
 
