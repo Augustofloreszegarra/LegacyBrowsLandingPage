@@ -330,7 +330,6 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1em;
   font-size: 0.8em;
 }
 
@@ -462,7 +461,9 @@ main {
     flex-direction: row-reverse;
     gap: 0;
   }
-
+  .conoceme-info {
+    padding-right: 30px;
+  }
   .conoceme-info p,
   .escogernos-texto p,
   .terminos p,
